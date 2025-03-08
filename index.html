@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="EB Bridging - Best Bridging Server for EaglerCraft">
     <title>EB Bridging | The Best EaglerCraft Bridging Server</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="animations.css">
-    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/theme.css">
     <link rel="icon" href="assets/icons/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <header id="navbar">
@@ -18,9 +21,6 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#leaderboards">Leaderboards</a></li>
-                <li><a href="#store">Store</a></li>
-                <li><a href="#join">Join</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -29,25 +29,19 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-overlay">
-            <h1>EB Bridging - The Ultimate EaglerCraft Bridging Server</h1>
-            <p>Step into the most competitive, smooth, and challenging bridging experience.</p>
+            <h1>EB Bridging - The Ultimate EaglerCraft Bridging Experience</h1>
+            <p>Relax and hone your bridging skills on our custom server with smooth, non-competitive gameplay.</p>
             <a href="#join" class="cta-btn">Join the Bridge Now</a>
         </div>
     </section>
 
-    <!-- Server Stats -->
-    <section id="server-stats" class="stats">
-        <div class="stats-card">
-            <h3>Server IP</h3>
-            <p><strong>eaglebridging.pro</strong></p>
-        </div>
-        <div class="stats-card">
-            <h3>Active Players</h3>
-            <p id="active-players">Loading...</p>
-        </div>
-        <div class="stats-card">
-            <h3>Current Ping</h3>
-            <p id="ping">Loading...</p>
+    <!-- NameMC Server Widget Section -->
+    <section id="namemc-widget" class="namemc-widget">
+        <div class="widget-container">
+            <h2 class="widget-title">Server Information</h2>
+            <p class="widget-subtitle">Check out our live server status and community on NameMC!</p>
+            <iframe style="width: 100%; height: 90px; border: none; display: block; margin: auto; border-radius: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);"
+                    src="https://namemc.com/server/eaglecraftbridging.pro/embed"></iframe>
         </div>
     </section>
 
@@ -55,49 +49,35 @@
     <section id="features" class="features">
         <div class="feature-card">
             <h3>Smooth Gameplay</h3>
-            <p>Optimized for ultra-smooth performance with minimal lag, even during intense bridging battles.</p>
+            <p>Optimized for ultra-smooth performance with minimal lag, providing a relaxing experience.</p>
         </div>
         <div class="feature-card">
             <h3>Custom Maps & Arenas</h3>
-            <p>Explore unique and custom-designed maps that push your bridging skills to the limit.</p>
+            <p>Explore unique, custom-designed maps that make your bridging practice even more fun.</p>
         </div>
         <div class="feature-card">
             <h3>Bot Practice Mode</h3>
-            <p>Train against bots that are tailored to simulate real player actions in the most realistic way possible.</p>
+            <p>Practice your bridging skills against bots that simulate real player movement and reactions.</p>
         </div>
-    </section>
-
-    <!-- Leaderboards Section -->
-    <section id="leaderboards" class="leaderboards">
-        <h2>Top Bridging Players</h2>
-        <div id="leaderboard" class="leaderboard-list">
-            <!-- Dynamic leaderboard content will be injected here -->
-        </div>
-    </section>
-
-    <!-- Store Section -->
-    <section id="store" class="store">
-        <h2>Exclusive Server Merch</h2>
-        <p>Unlock special items and perks in our store to enhance your bridging experience!</p>
-        <a href="store.html" class="cta-btn">Visit Store</a>
     </section>
 
     <!-- Call to Action (Join) -->
     <section id="join" class="join">
         <h2>Ready to Join the Bridge?</h2>
-        <p>Connect to the server now and become the best bridger in EaglerCraft!</p>
+        <p>Connect to the server now and practice your bridging skills at your own pace!</p>
         <a href="minecraft://connect/eaglebridging.pro" class="cta-btn">Play Now</a>
     </section>
 
     <!-- Footer -->
     <footer id="footer">
-        <p>&copy; 2025 EB Bridging. All rights reserved. | <a href="https://discord.com" target="_blank">Discord</a> | <a href="https://twitter.com" target="_blank">Twitter</a> | <a href="#contact">Contact</a></p>
+        <p>&copy; 2025 EB Bridging. All rights reserved. | 
+            <a href="https://discord.gg/FD27uucNxY" target="_blank">Discord</a> | 
+        </p>
     </footer>
 
     <!-- JS Files -->
     <script src="js/app.js"></script>
-    <script src="js/leaderboard.js"></script>
-    <script src="js/animations.js"></script>
     <script src="js/serverStats.js"></script>
 </body>
+
 </html>
